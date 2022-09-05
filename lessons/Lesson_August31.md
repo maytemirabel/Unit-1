@@ -1,4 +1,4 @@
-***Lesson - August 31st***
+## Lesson - August 31st***
 
 Given 2 numbers, A & B, output TRUE if one of them is 20 or if their sum is equal to 20
 ```.py
