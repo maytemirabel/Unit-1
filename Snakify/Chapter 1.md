@@ -8,4 +8,4 @@ c = int (input())
 print(a + b + c) 
 ```
 
-![Proof](Screen Shot 2022-09-06 at 6.53.52.png)
+![Proof](Screen Shot 2022-09-06 at 6.53.52.jpeg)
