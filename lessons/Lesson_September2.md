@@ -1,5 +1,7 @@
+## Lesson - September 2 ##
+
+Create a program that calculates the tax for a salary entered by the user
 ```.py
-#create a program that calculates the tax for a salary entered by the user following the table below
 print("Insert salary: ")
 salary = int(input())
 
