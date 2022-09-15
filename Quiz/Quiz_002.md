@@ -1,5 +1,7 @@
+## Quiz 2 ##
+
+Given 2 numbers, A & B, output TRUE if one of them is 20 or if their sum is equal to 20
 ```.py
-#given 2 numbers, A & B, output TRUE if one of them is 20 or if their sum is equal to 20
 number_A = int(input("Enter number A: "))
 number_B = int(input("Enter number B: "))
 if number_A == 20 or number_B == 20 or number_B + number_A == 20:
