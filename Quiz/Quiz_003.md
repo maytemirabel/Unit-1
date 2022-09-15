@@ -1,5 +1,7 @@
+## Quiz 3 ##
+
+Create a program that translate the proteins in the DNA chain
 ```.py
-#create a program that translate the proteins in the DNA chain
 protein = input("Insert protein: ")
 if protein.upper() == "A":
     print("T")
