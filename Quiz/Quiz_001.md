@@ -10,5 +10,5 @@ characters excluding those first and last characters. This all led me to the con
 word and then subtract 2 in order to get to the number in between the letters printed. However, if the program didn't count more than 3 characters
 during its initial count, no number would be printed as the word would get printed as it is. 
 
-Fig.3 My own black box 
+Fig.2 My own black box 
 ![IMG_8400](https://user-images.githubusercontent.com/105724334/190463975-ccd80ceb-2779-4a19-ba17-7ca1c8306fe5.jpeg)
