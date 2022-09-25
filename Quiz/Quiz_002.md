@@ -10,8 +10,8 @@ else: Output = False
 print(f"The solution is {Output}")
 ```
 
-#### Figure.1 Proof of program
+#### Figure 1: Proof of program
 <img width="1034" alt="Screen Shot 2022-09-16 at 2 55 30" src="https://user-images.githubusercontent.com/105724334/190476643-5d5faa89-6753-4b38-89e4-fb21723835ab.png">
 
-#### Figure.2 Flowchart of the program
+#### Figure 2: Flowchart of the program
 ![IMG_0362](https://user-images.githubusercontent.com/105724334/190477378-0d66a5d0-96d8-4f83-98de-0f6458b67261.jpg)
