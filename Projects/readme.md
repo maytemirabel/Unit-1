@@ -1,7 +1,6 @@
 # Crypto Wallet
 
-![](22ROOSE-master768.gif)  
-<sub>Illustration for Glenn Harvey</sub>
+![](galaxy.gif)  
 
 # Criteria A: Planning
 
