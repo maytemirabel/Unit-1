@@ -9,6 +9,16 @@ characters excluding those first and last characters. This all led me to the con
 word and then subtracted 2 in order to get to the number in between the letters printed. However, if the program didn't count more than 3 characters
 during its initial count, no number would be printed as the word would get printed as it is. 
 
+
+#### Program code
+Code a program that produces the output shown with the input provided
+```.py
+a = (input("enter input: "))
+a = a.split()
+for i in a:
+    print(i[0] + str(len(i) - 2) + i[-1], end=" ")
+``` 
+
 #### Figure 2: Flowchart
 ![IMG_0378](https://user-images.githubusercontent.com/105724334/192144551-671b3083-e73d-4434-a2d0-37ea60b2547e.jpg)
 
