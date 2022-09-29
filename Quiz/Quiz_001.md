@@ -19,11 +19,11 @@ for i in a:
     print(i[0] + str(len(i) - 2) + i[-1], end=" ")
 ``` 
 
-#### Figure 2: Flowchart
-![IMG_0378](https://user-images.githubusercontent.com/105724334/192144551-671b3083-e73d-4434-a2d0-37ea60b2547e.jpg)
-
-#### Figure 3: Proof of program
+#### Figure 2: Proof of program
 <img width="804" alt="Screen Shot 2022-09-25 at 21 28 28" src="https://user-images.githubusercontent.com/105724334/192144587-fbdd8d77-1c1f-43c2-a966-24cb62f4e1e8.png">
+
+#### Figure 3: Flowchart
+![IMG_0378](https://user-images.githubusercontent.com/105724334/192144551-671b3083-e73d-4434-a2d0-37ea60b2547e.jpg)
 
 #### Figure 4: My own black box 
 ![IMG_8400](https://user-images.githubusercontent.com/105724334/190463975-ccd80ceb-2779-4a19-ba17-7ca1c8306fe5.jpeg)
