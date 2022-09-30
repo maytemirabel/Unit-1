@@ -13,5 +13,5 @@ print(f"The solution is {Output}")
 #### Figure 1: Proof of program
 <img width="1034" alt="Screen Shot 2022-09-16 at 2 55 30" src="https://user-images.githubusercontent.com/105724334/190476643-5d5faa89-6753-4b38-89e4-fb21723835ab.png">
 
-#### Figure 2: Flowchart of the program
+#### Figure 2: Flowchart 
 ![IMG_0389](https://user-images.githubusercontent.com/105724334/193056781-991135be-1148-405d-9b81-a4b667fc8199.jpg)
