@@ -1,30 +1,24 @@
 ## Quiz 7 ##
-
+#### Program code
 Create a program that create 10 random password with digits and letters of length 20.
 
 ```.py
 import random
-password=[]
-num_digits= int(input("Please input the digits you want your password to be: "))
-if_symbols=input('Please type True if you would like to have digits in your password: ')
+number_password = 20
+password = []
 
-if if_symbols.title()=="True":
-    for x in range(num_digits):
-        digit = random.randint(48, 122)
-        while 57 < digit < 65 or 90 < digit < 97:
-            digit = random.randint(48, 122)
-        rand_chr = chr(digit)
-        password.append(rand_chr)
-if if_symbols.title()!="True":
-    for x in range(num_digits):
-        digit = random.randint(65, 122)
-        while 90 < digit < 97:
-            digit = chr(random.randint(65, 122))
-        rand_chr=chr(digit)
-        password.append(rand_chr)
-for element in password:
-    print(element, end=" ")
+for x in range(10):
+    for i in range(number_password):
+        rand_num = random.randint(48, 122)
+        while 57 < rand_num < 65 or 90 < rand_num < 97:
+            rand_num = random.randint(48, 122)
+        rand_chr = chr(rand_num)
+        print(rand_chr, end="")
+    print(" ")
 ```
 
-Fig. 1 Proof of code
-<img width="1037" alt="Screen Shot 2022-09-20 at 2 21 48" src="https://user-images.githubusercontent.com/105724334/191079039-d5dcb5c4-c4e0-44df-a890-f4b5d21a9ce9.png">
+#### Figure 1. Proof of code
+<img width="1009" alt="Screen Shot 2022-10-02 at 23 08 15" src="https://user-images.githubusercontent.com/105724334/193458346-9de96e10-5c80-4c5a-b770-ecd2067d381f.png">
+
+#### Figure 2. Flowchart
+![IMG_0398](https://user-images.githubusercontent.com/105724334/193460305-8e456ca3-80d2-43b4-a5cb-f4477609d88c.jpg)
