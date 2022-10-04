@@ -1,4 +1,4 @@
-# Crypto Wallet
+# Crypto Wallet: Cosmos
 ![](galaxy.gif)  
 ###### Native Galaxy GIF on Tenor
 
@@ -13,7 +13,20 @@ Apart for this requirements, Ms Sato is open to explore a cryptocurrency selecte
 ### Proposed Solution
 
 Design statement:
-I will design and make a <ins>digital ledger</ins> for a client who is <ins>Ms. Sato</ins>. The ——– will about ———— and is constructed using the software <ins>Python</ins>. It will take <ins>3 weeks</ins> to make and will be evaluated according to the criteria <ins>found down below</ins>.
+
+I will design and make a **digital ledger** for a client who is **Ms. Sato**. The **ledger** will **organize and track all of Ms Sato's transactions as well as provide critical and fundamental statistics about the cryptocurrency Cosmos.** The **ledger** will be constructed using the software **Python**, taking **3 weeks** to make and will be evaluated according to the criteria **B**.
+
+The software **Python** will be used as it one of the most accessible programming languages available since it has simplified syntax and not complicated, highlighting natural language. Due to this, Python codes can be both written and executed much faster than other programming languages.
+
+Python is the best performance booster in the automation of software testing also. One will be amazed at how much less time and few numbers of lines are required to write codes for automation tools.
+
+ Python can be used in nearly any kind of environment, and one will not face any kind of performance loss issue irrespective of the platform one is working.
+
+One more best thing about versatility of python language is that it can be used in many varieties of environments such as mobile applications, desktop applications, web development, hardware programming, and many more. The versatility of python makes it more attractive to use due to its high number of applications.
+
+ Python can be used in nearly any kind of environment, and one will not face any kind of performance loss issue irrespective of the platform one is working.
+
+One more best thing about versatility of python language is that it can be used in many varieties of environments such as mobile applications, desktop applications, web development, hardware programming, and many more. The versatility of python makes it more attractive to use due to its high number of applications.
 
 Justify the tools/structure of your solution
 
