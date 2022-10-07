@@ -1,5 +1,6 @@
 ## EV Calculator ##
-#### Data
+Complete the program for the EV calculator 
+#### Data (charging_log.csv)
 ```.py
 date,charge,duration
 12.9.22,8.878kWh,12:32:36
