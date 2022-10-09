@@ -1,4 +1,4 @@
-## Quiz 14 - in progress
+## Quiz 14
 #### Program code
 Create a function that receives one input and produces the output shown
 ```.py
@@ -14,3 +14,4 @@ print (mystery(10,4))
 <img width="1008" alt="Screen Shot 2022-10-04 at 13 38 26" src="https://user-images.githubusercontent.com/105724334/193735659-c1a6cb60-81f2-4482-a524-b71143f1216e.png">
 
 #### Figure 2: Flowchart
+![IMG_0413](https://user-images.githubusercontent.com/105724334/194782891-cc82fb44-b8fd-4fcc-8bb2-91ee95d09295.jpg)
