@@ -52,34 +52,27 @@ This visual representation of how the system functions indicates the model of th
 | Functional: Unit testing | validate_int_input | 1. Use the function validate_int_input 2. Enter a letter as input 3. Enter a number as input. | 1.Error message will be print in case of letter. 2. The program will close in case of number. |
 | Functional: Integrational testing | Register system | 1. Use the function register. 2. Enter a desired username and password. | After entering a desired username and password, the data will go into a database "username.csv". A message stating "Success!" will be print after the username and password have been entered.
 | Functional: Integrational testing | Login system | 1. Use the function login. 2. Enter the username and password. | If the username and passwords have been stored in the database previously, the code will allow the user to continue. A message saying "Welcome back {name of user}" is expected. If the username and password entered have not been stored before, access will be denied and and the user will be asked to try again.
-| Functional : Integrational testing | Record a transaction | 1. Choose to record a transaction 2. Enter the date: day, month, year 3. Choose expense category (food, daily, rent, others.) 4. Enter amount of the expense 5. If all values have been inputed correctly (no strings in int fields) the transaction will be stored in the databse called "expenses.csv". This data will be accessible to the user using the function view past transactions. |
+| Functional : Integrational testing | Record a transaction | 1. Choose to record a transaction 2. Enter the date: day, month, year 3. Choose expense category (food, daily, rent, others.) 4. Enter amount of the expense 5. The transaction will be record. | If all values have been inputed correctly (no strings in int fields) the transaction will be stored in the databse called "expenses.csv". This data will be accessible to the user using the function view past transactions. |
 | Non-functional: Usuability testing | The login/register instructions and options showcased in main menu are concise and easy to follow. | 1. Run program 2. Login | The login instructions are displayed, and the main menu items can be easily read, and directions are simple to use for anyone. | 
 | Non-functional: Response time | Testing if code responds quickly to user input | 1. Login to the Crypto Wallet 2. Choose any options and follow the prompted directions that follow | The code runs smoothly without crashing or severe lag. The program responds promptly to user input and displays accurate information. | 
 
 ### Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |---------|----------------|-----------------|---------------|------------------------|-----------|
-| 1 | Meet withe the client | Talk with the client to dicuss the problems they are facing and brainstorm solutions to create a plan to help the client resolve the problems| 10 minutes | Sep 23 | A |
-| 2 | Brainstorm and write the problem definition	| A clear problem definition on Github	| 15 minutes | Sep 23 | A |
-| 3 | Brainstorm and write down success criterias | A clear success criteria that suits the client and resolves the problem | 15 minutes | Sep 23 | A |
-| 4 | Brainstorm and write down a proposed solution for the client| A clear justification that suits the client and developer.| 15 minutes | Sep 23 | A |
-| 5 | Create system diagram | To have a clear idea of the hardware and software requirements for the proposed solution | 45 minutes | Sep 23| B | 
-| 6 | Create a simple registration and login system | To create a program that allows the user to register and login to their digital ledger using a username and password they set up | 1 hour minutes| Sep 26| C | 
-| 7 | Encrypt the password | A program to protect the application using a password with encryption | 45 minutes | Sep 28 | C |
-| 8 | Code the menu of the Crypto Wallet | To have a menu system that includes the title and menu items on the screen | 20 minutes | Sep 30 | C |
-| 9 | Code menu options and allow user interaction | The user can choose different options from the menu (Ex: Option 1: Record transcation, and the user will be able to choose Option 1 to record a transaction). | 2 hours | Oct 1 | C | 
-| 10 | Create visual display of expense data | Code a bar graph that includes all expense history in categories. | 20 minutes | Oct 1 | C |
-| 11 | Create a visual display for transaction data | Code a chart that includes all transaction data with the date, expense, and amount. | 45 minutes | Oct 2 | C |
-| 12 | Code a menu for deposit and withdraw | Code a second menu that gives the user two options: Deposit and Withdraw. | 15 minutes | Oct 2 | C |
-| 13 | Display correct balance after money is either deposited or withdrawn | Code a function that would add or subtract the amount of money deposited or withdrawn from the balance and print the updated balance | 1 hour | Oct 3 | C |
-| 14 | Code a menu for creating or viewing transactions | Code a second menu that gives the user two options: Create a transaction, View transaction history. | 15 minutes | Oct 4 | C |
-| 15 | Code transaction functions | Create a code that allows the user to record when they made the transaction, what kind of transaction it was, and how much the transaction was. The code will then transfer all of that information into a spreadsheet and bar graph, with accurate data | 1 hour | Oct 4 | C |
-| 16 | Make sure to validate user input for all option choices | Code functions that would make sure what the user inputs follows the requirements (Ex: If a number digit is required but user enters a character, an error message will print, and allowing them to retry). | 1 hour 30 minutes | Oct 5 | C | 
-| 17 | Hide the password when it is being typed | The user will only see asteriks when entering their password to increase security. | 45 minutes | Oct 5 | C |
-| 18 | Draw and describe the flow diagrams | Flow diagrams for different parts of the solution along with a brief explanation | 1 hour | Oct 6 | B |
-| 19 | Write the test plans | Procedures one should take to test the program and the expected outcome of each test is on Github | 1 hour | Oct 7 | B |
-| 20 | Meet with client | Hear feedback from the client about the current state of the product | 30 minutes | Oct 7 | B | 
-| 21 | Finish Criteria C | Write the descriptions of the code and the detail of the techniques that were used on Github | 2 hours | Oct 7 | C |
+| 1 | write the problem definition	| A clear problem definition on Github	| 15 minutes | Sep 23 | A |
+| 2 | Write down success criterias | A clear success criteria that is fitting for the problem and the client| 15 minutes | Sep 23 | A |
+| 3 | Write down a proposed solution for the client| A clear justification is provided that suits the client and developer.| 15 minutes | Sep 23 | A |
+| 4 | Create system diagram | Gives an idea of the hardware and software requirements | 45 minutes | Sep 25| B | 
+| 5 | Create a registration and login system | The program is secured as it requires the user to register and login to their digital ledger using a username and password they set up | 1 hour | Sep 27| C | 
+| 6 | Code the menu of the Crypto Wallet | Menu system that includes the title and menu items | 30 minutes | Sep 30 | C |
+| 7 | Code menu options and allow user interaction | The user can pick what their next action will be from the different options from the menu. | 2 hours | Oct 3 | C | 
+| 8 | Show the correct balance after money is either deposited or withdrawn | Program a function that will display the correct balance after the user has either withdrawn or deposited money| 3 hour | Oct 3 | C |
+| 9 | Code transaction program | Create a code that lets the user record transactions for expenses. For example, the kind of transaction, amount and date will be asked. The data will be saved in a datase and later on will be available to the user.  | 3 hour | Oct 4 | C |
+| 10 | Ensure all user input is appropiate for the requirements | Program functions that will ensure the inputs fulfil what is asked. | 2 hours | Oct 6 | C | 
+| 11 | Draw and describe the flow diagrams | Provide an explanation for the drawn out flow diagrams | 2 hours | Oct 6 | B |
+| 12 | Write the test plans | Expected outcomes and solutions to errors are described | 2 hours | Oct 7 | B |
+| 23 | Meet with client | Seek feedback from the client about the current state of the product | 30 minutes | Oct 7 | B | 
+| 21 | Finalize criteria C| Finish off explaining what skills were utilized | 2 hours | Oct 7 | C |
 
 ## Criteria C: Development
 ## User Acess
