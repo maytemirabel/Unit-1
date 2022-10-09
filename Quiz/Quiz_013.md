@@ -1,4 +1,4 @@
-## Quiz 13 -
+## Quiz 13 
 #### Program code
 Create a function that receives one input and produces the output shown
 ```.py
