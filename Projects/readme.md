@@ -1,38 +1,41 @@
 # Crypto Wallet: Cosmos
-![](galaxy.gif)  
-###### Native Galaxy GIF on Tenor
+![](galaxy.gif)
 
-⁂ ✧ ⁂ ✧ ⁂ ✧ ⁂ ✧ ⁂ ✧ ⁂ ✧ ⁂
-⁂ ⁂ ⁂ ⁂ ⁂ ⁂ ⁂
+###### Native Galaxy GIF on Tenor
 
 ## Criteria A: Planning
 
 ### Problem Definition
 
-Ms. Sato is a local trader who is interested in the emerging market of cryptocurrencies. She has started to buy and sell electronic currencies, however at the moment she is tracking all her transactions using a ledger in a spreadsheet which is starting to become burdensome and too disorganized. It is also difficult for Ms Sato to find past transactions or important statistics about the currency. Ms Sato is in need of a digital ledger that helps her track the amount of the cryptocurrency, the transactions, along with useful statistics.
+Ms. Sato is a local trader who is interested in the emerging market of cryptocurrencies. She has started to buy and sell electronic currencies, however, at the moment she is tracking all her transactions using a ledger in a spreadsheet which is starting to become burdensome and too disorganized. It is also difficult for Ms. Sato to find past transactions or important statistics about the currency. Ms. Sato is in need of a digital ledger that helps her track the amount of cryptocurrency, and the transactions, along with useful statistics.
 
-Apart for this requirements, Ms Sato is open to explore a cryptocurrency selected by the developer.
+Apart from these requirements, Ms. Sato is open to exploring a cryptocurrency selected by the developer.
 
 ## Proposed Solution
 
 ### Design statement
 I will design and make a **digital ledger** for a client who **is in need of an administrative system for her cryptocurrencies: Ms. Sato**. The **ledger** will **manage all of Ms. Sato's investments and transactions as well as provide fundamental statistics about the cryptocurrency Cosmos.** The **ledger** will be constructed using the software **PyCharm** and the language **Python**, taking **3 weeks** to make. It will be evaluated according to the criteria **A and B**.
 
+An example of the data store is:
+| DATE  | Description | Category | Amount ATOMS | 
+| ----- | ------------|----------|--------|
+| Sep/14/2022 | Groceries |  Food  | 4.35 |
+| Sep/28/2022 | Shoes |  Shopping  | 6.73 |
+
+The cryptocurrency that will be utilized for this project will be **Cosmos (ATOM)**. Cosmos (ATOM) is a cryptocurrency that powers an ever-expanding ecosystem of blockchains that can scale and interoperate with each other. Cosmos is a proof-of-stake chain, meaning that ATOM holders can stake their tokens in order to maintain the network and receive more ATOM as a reward.
+
 ### Rationale for Proposed Solution
-**Cosmos (ATOM)** is a cryptocurrency that powers an ever-expanding ecosystem of blockchains that can scale and interoperate with each other. Cosmos is a proof-of-stake chain, meaning that ATOM holders can stake their tokens in order to maintain the network and receive more ATOM as a reward.
+The ledger that I will design begins with a welcome message and a quick description of what it does, followed by a password-protected login system in order to keep the user’s personal information safe. The user will be able to change their username and password as they please. If the login is successful, a menu with a list of actions will be displayed, asking the user what their next steps will be. After the user makes the decision, a function for that option will operate. Within the options provided, actions such as viewing past dealings, making transactions like deposits or withdrawals, and viewing information about the cryptocurrency will appear. There will be guiding messages for each step so the user will know exactly what is happening. This ledger is an effective solution because unlike other organizational methods such as spreadsheets, a digital ledger allows the user to access private information rapidly. This product is essentially the most effective solution because unlike the other tools Ms. Sato used to use, this ledger will allow her to input data concisely and organized. 
 
-The ledger that I will design begins with a welcome message and a quick description of what it does, followed by a password-protected login system in order to keep the user’s personal information safe. The user will be able to change their username and password as they please. If the login is successful, a menu with a list of actions will be displayed, asking the user what their next steps will be. After the user makes the decision, a function for that option will operate. Within the options provided, actions such as viewing past dealings, making transactions like deposits or withdrawals, and viewing information about the cryptocurrency will appear. There will be guiding messages for each step so the user will know exactly what is happening.
-
-The language **Python** will be used as it is one of the most accessible programming languages available since it has simplified syntax, meaning the arrangement of words is not complicated. The additional advantage of clear syntax and easy readability is the speed of development itself. Another benefit Python has is its versatility: it can be used in many varieties of environments such as mobile applications, desktop applications, web development, hardware programming, and many more.
+The language **Python** will be used as it is one of the most accessible programming languages available since it has simplified syntax, meaning the arrangement of words is not complicated. The additional advantage of clear syntax and easy readability is the speed of development itself. Another benefit Python has is its versatility: it can be used in a variety of environments such as mobile applications, desktop applications, web development, hardware programming, and many more.
 
 ### Success Criteria
-1. The electronic ledger is a text-based software (Runs in the Terminal).
-2. The electronic ledger display the basic description of the crypotocurrency selected - Cosmos.
-3. The electronic ledger allows to enter, withdraw and record transaction (including the recipient, sender, timestamp, and wallet ID of the involved stakeholders).
-4. The electronic ledger is password-protected to ensure the user privacy and safety.
-5. The electronic ledger categorizes transactions into either buying, selling, or transfer of Cosmos coins.
+1. The electronic ledger is text-based software (Runs in the Terminal).
+2. The electronic ledger displays the basic description of the cryptocurrency selected - Cosmos.
+3. The electronic ledger allows one to enter, withdraw and record transactions (including the recipient, sender, timestamp, and wallet ID of the involved stakeholders).
+4. The electronic ledger is password-protected to ensure user privacy and safety.
+5. The electronic ledger categorizes transactions into the different purposes ATOMS are occupied for.
 6. The ledger displays the value of the cryptocurrency in different currencies. 
-7. The ledger shows the real time value of the cryptocurrency.
 
 ## Criteria B: Design
 
