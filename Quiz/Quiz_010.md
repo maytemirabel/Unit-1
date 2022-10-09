@@ -35,5 +35,4 @@ print (out)
 <img width="552" alt="Screen Shot 2022-10-02 at 23 52 01" src="https://user-images.githubusercontent.com/105724334/193460619-40004580-bc86-478a-85ff-4aa1e736b0f1.png">
 
 #### Figure 3: Flowchart 
-
-
+![IMG_0410](https://user-images.githubusercontent.com/105724334/194782510-f3d2c307-806a-4415-89f0-24d73161bfc1.jpg)
