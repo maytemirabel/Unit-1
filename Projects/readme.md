@@ -82,26 +82,81 @@ This visual representation of how the system functions indicates the model of th
 | 21 | Finish Criteria C | Write the descriptions of the code and the detail of the techniques that were used on Github | 2 hours | Oct 7 | C |
 
 ## Criteria C: Development
-## User registration
+## User Acess
 
 ```.py
-def register(uname:str, password:str):
-    '''
-    This function saves a user, password in the file
-    credentials.csv
-    :param uname: username a string
-    :param password: password a string
-    :return: nothing
-    '''
-    #open the file in mode append: a
-    file = open("credentials.csv", "a")
-    salty = "¯\(°_O)/¯"
-    to_hash = uname + password + salty
-    hashed_password = hmac.new(''.encode(), to_hash.encode(), 'sha512').hexdigest()
-    file.write(f"{uname},{hashed_password}\n")
-```
+from my_library import validate_int_input, colors, bold_green, end_code, bold_blue
 
-The first part of creating a digital ledger for a client is to create a registration system so the client can create a Crypto Wallet account. This code allows the user to enter a username and password they desire, and it adds their crendentials into a file with and encrypted password. The encryption I used in this is called "hashing". Encryption is the process of encoding plain text or any information in such a way that only authorized people can read it with a corresponding key, like a password, so that confidential data can be protected from unauthorized persons. Hashing converts any amount of data into a fixed-length hash that cannot be reversed. In my code, it is hashed using a random string of characters, known as a salt. This is an additional input to my code above to hash the user's password.
+# welcome!
+welcome_msg = f"{bold_blue} WELCOME TO YOUR DIGITAL LEDGER - COSMOLOGY ! {end_code}".center(110, "✧")
+
+description_msg = "\n Cosmology is a digital ledger aiming to keep your finances organized concisely and safely. " \
+                  "\n We believe it will guide you as you navigate through the world of Cosmos; your cryptocurrency. \n\n"
+
+# import pyfiglet module
+import pyfiglet
+result = pyfiglet.figlet_format("C O S M O S", font = "3-d").center(100)
+print(welcome_msg, description_msg, result)
+
+prompt_msg = "Please enter an option [1-2]: "
+
+print(f"{colors[2]}Login if you already have an account or register to create one{end_code}".center(105))
+
+entering_menu = """1. Login
+2. Register
+"""
+print(entering_menu)
+
+def accesing():
+    option = validate_int_input(prompt_msg)
+    while option > 2 or option < 1:
+        option = validate_int_input(f"{colors[1]}Invalid option.{end_code} {prompt_msg}")
+
+    with open("username.csv", "r") as file:
+        file = file.readlines()
+
+    # Option 1: login
+    if option == 1:
+        print(f"{colors[4]}1. Log-in {end_code}")
+        username = input("Enter your username: ")
+        password = input("Enter your password: ")
+
+        for line in file:
+            line = line.strip()
+            line=line.split(",")
+            if username==line[0] and password==line[1]:
+                print(f"Welcome back, {username}!")
+                ledger()
+        else:
+            print(f"{colors[1]}Invalid username or password. Try again or register if you haven't.{end_code}")
+            accesing()
+
+    # Option 2: register
+    if option == 2:
+        print(f"{colors[4]}2. Register{end_code}")
+        username = input("Create username: ")
+        password = input("Create password, it must be longer than 6 characters: ")
+        password_con = input("Confirm password: ")
+        if len(password) <= 6:
+                print(f"{colors[1]}Password is too short. Try again.{end_code}")
+                accesing()
+        else:
+            if password != password_con:
+                print(f"{colors[1]}Error! Passwords don't match. Try again.{end_code}")
+                accesing()
+
+            if username in file:
+                print(f"{colors[1]}Error! Username already exists. Try again.{end_code}")
+                accesing()
+
+        with open("username.csv", "w") as file:
+            #data = [username,password]
+            file.write(f'{username},{password}')
+        print(f"{colors[3]}Success!{end_code}")
+        ledger()
+accesing()
+```
+At the very beginning, the user is welcomed to the ledger and given two options, to login in if they have a pre existing account or to register if they do not. This code allows the user to do both. If registering, the user chooses their desired username and password, and they are also asked to confirm this password to see if they match. If all password requirements are satisfied, meaning the password is longer that 6 characters and neither the username nor the password have ever been inputed into the database "username.csv" before, the creditials of that user will be saved and stored into that said database. If the user is logging in, the program expects the user to input credentials that have been registered before and have been therefore found in the database. If they have, the user will proceed into the ledger but if they have not, the user will be asked to try again or to register if they haven't and they pressed loggin by mistake. 
 
 ## Video of the Program
 [Video of the Program](https://drive.google.com/file/d/1ZUzw6oEtKnRyDeC0dIwuSIvULnd2qX/view?usp=sharing)
