@@ -26,3 +26,4 @@ print (open_doors(students))
 <img width="1032" alt="Screen Shot 2022-10-10 at 8 16 42" src="https://user-images.githubusercontent.com/105724334/194784077-9f32e9f8-dc27-4146-9677-cccbc44d9efe.png">
 
 #### Figure 2: Flowchart 
+![IMG_0414](https://user-images.githubusercontent.com/105724334/194784880-1962b22f-34cb-442d-ad1b-d1d28c27ec03.jpg)
