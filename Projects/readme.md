@@ -45,6 +45,8 @@ The language **Python** will be used as it is one of the most accessible program
 This visual representation of how the system functions indicates the model of the computer that is being utilized as well as its descriptions such as the amount of storage it contains and its operative system. The ledger runs on Python Version 3.9.13 which is connected to a database of CSV files.
 
 ### Flow Diagrams
+![IMG_0362 2](https://user-images.githubusercontent.com/105724334/194748087-35d77e61-bc6f-404b-9382-7c12a5b481ce.jpeg)
+<img width="446" alt="Screen Shot 2022-10-09 at 18 11 07" src="https://user-images.githubusercontent.com/105724334/194748288-37aab5d3-f40f-45f4-b89d-7af195c15d3b.png">
 
 ### Test Plan
 | Test Type | Target | Procedure | Expected Outcome |
@@ -150,6 +152,37 @@ def accesing():
 accesing()
 ```
 At the very beginning, the user is welcomed to the ledger and given two options, to login in if they have a pre existing account or to register if they do not. This code allows the user to do both. If registering, the user chooses their desired username and password, and they are also asked to confirm this password to see if they match. If all password requirements are satisfied, meaning the password is longer that 6 characters and neither the username nor the password have ever been inputed into the database "username.csv" before, the creditials of that user will be saved and stored into that said database. If the user is logging in, the program expects the user to input credentials that have been registered before and have been therefore found in the database. If they have, the user will proceed into the ledger but if they have not, the user will be asked to try again or to register if they haven't and they pressed loggin by mistake. 
+
+## Balance set up
+```.py
+if new == 2:
+    steps_msg = "Setting up your balance: ".center(50)
+    print(f"{colors[2]}{steps_msg}{end_code}")
+    print(f"{bold_green} Input your current balance (ATOMS): {end_code}")
+    with open(f"wallet.csb","w") as file:
+        balance = input()
+        new_balance = balance()
+        print(f"{bold_blue} Thank you! You can now perfom transactions! {end_code}")
+```
+A code to setup the balance for a new user has also been created. This will set the balance to the desired amount the user has decided the balance to be and the user will therefore be able to make transaction with the newly acquired money.
+
+## Deposit
+```.py
+    if option == 4:
+        print(f"{colors[4]}4. Deposit {end_code}")
+        with open("data_transactions.csv", "a", newline="") as data_transactions:
+            new_data = csv.writer(data_transactions)
+            transaction_type = "deposit"
+            deposit_amount = input("How much ATOMS would you like to deposit?: ")
+            while deposit_amount:
+                try:
+                    deposit_amount = int(input())
+                except ValueError:
+                    print("Try again. Please enter a number.")
+            new_data.writerow([transaction_type, crypto_amount])
+            print(f"{bold_green} You have deposited {end_code}{bold_blue}{deposit_amount} ATOMS {end_code}{bold_green} into your wallet.{end_code}")
+            ledger()
+```
 
 ## Video of the Program
 [Video of the Program](https://drive.google.com/file/d/1ZUzw6oEtKnRyDeC0dIwuSIvULnd2qX/view?usp=sharing)
