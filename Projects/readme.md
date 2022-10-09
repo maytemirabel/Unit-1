@@ -45,8 +45,14 @@ The language **Python** will be used as it is one of the most accessible program
 This visual representation of how the system functions indicates the model of the computer that is being utilized as well as its descriptions such as the amount of storage it contains and its operative system. The ledger runs on Python Version 3.9.13 which is connected to a database of CSV files.
 
 ### Flow Diagrams
-![IMG_0362 2](https://user-images.githubusercontent.com/105724334/194748087-35d77e61-bc6f-404b-9382-7c12a5b481ce.jpeg)
-<img width="446" alt="Screen Shot 2022-10-09 at 18 11 07" src="https://user-images.githubusercontent.com/105724334/194748288-37aab5d3-f40f-45f4-b89d-7af195c15d3b.png">
+#### Figure 2: Validating an input (integer)
+![IMG_0407](https://user-images.githubusercontent.com/105724334/194761529-4c95b36c-b37e-4abc-9f05-8901fd369f2c.jpg)
+
+#### Figure 3: Withdraw
+![IMG_0408](https://user-images.githubusercontent.com/105724334/194761547-57085532-67ba-461b-85c0-06a35cbb249f.jpg)
+
+#### Figure 4: Exiting the program
+![IMG_0409](https://user-images.githubusercontent.com/105724334/194761545-07f295c5-3910-45d3-98d5-133b53fc4f93.jpg)
 
 ### Test Plan
 | Test Type | Target | Procedure | Expected Outcome |
@@ -164,7 +170,7 @@ if new == 2:
         new_balance = balance()
         print(f"{bold_blue} Thank you! You can now perfom transactions! {end_code}")
 ```
-A code to setup the balance for a new user has also been created. This will set the balance to the desired amount the user has decided the balance to be and the user will therefore be able to make transaction with the newly acquired money.
+A code to setup the balance for a new user has also been created. This will set the balance to the desired amount the user has decided the balance to be and the user will therefore be able to make transaction with such. This is mostly for when a user is new to the digital ledger and is currently setting up their data.  
 
 ## Deposit
 ```.py
@@ -174,15 +180,11 @@ A code to setup the balance for a new user has also been created. This will set 
             new_data = csv.writer(data_transactions)
             transaction_type = "deposit"
             deposit_amount = input("How much ATOMS would you like to deposit?: ")
-            while deposit_amount:
-                try:
-                    deposit_amount = int(input())
-                except ValueError:
-                    print("Try again. Please enter a number.")
+            deposit amount = validate_int_input()
+            while not deposit_amount.isdigit:
+                    print(f"Try again. Please enter a number.")
             new_data.writerow([transaction_type, crypto_amount])
             print(f"{bold_green} You have deposited {end_code}{bold_blue}{deposit_amount} ATOMS {end_code}{bold_green} into your wallet.{end_code}")
             ledger()
 ```
-
-## Video of the Program
-[Video of the Program](https://drive.google.com/file/d/1ZUzw6oEtKnRyDeC0dIwuSIvULnd2qX/view?usp=sharing)
+This is the code I made that allows the user to deposit money into their account. The deposit amount will be saved onto the databse named "data_transactions". The number that is inputted is checked to see if it is an integer, as strings cannot be subtracted nor added to an integer. 
