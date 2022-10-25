@@ -29,7 +29,9 @@ The ledger that I will design begins with a welcome message and a quick descript
 
 The language **Python** will be used as it is one of the most accessible programming languages available since it has simplified syntax, meaning the arrangement of words is not complicated. The additional advantage of clear syntax and easy readability is the speed of development itself. Another benefit Python has is its versatility: it can be used in a variety of environments such as mobile applications, desktop applications, web development, hardware programming, and many more.
 
+#### Citations
 Sanyal, Sayantani. 10 Reasons Why Python Is One Of The Best Programming Languages. Retrieved September 28, 2022
+
 Advantages and disadvantages of python - how it is dominating Programming World. DataFlair. Retrieved September 30, 2022
 
 ### Success Criteria
