@@ -29,6 +29,9 @@ The ledger that I will design begins with a welcome message and a quick descript
 
 The language **Python** will be used as it is one of the most accessible programming languages available since it has simplified syntax, meaning the arrangement of words is not complicated. The additional advantage of clear syntax and easy readability is the speed of development itself. Another benefit Python has is its versatility: it can be used in a variety of environments such as mobile applications, desktop applications, web development, hardware programming, and many more.
 
+Sanyal, Sayantani. 10 Reasons Why Python Is One Of The Best Programming Languages. Retrieved September 28, 2022
+Advantages and disadvantages of python - how it is dominating Programming World. DataFlair. Retrieved September 30, 2022
+
 ### Success Criteria
 1. The electronic ledger is text-based software (Runs in the Terminal).
 2. The electronic ledger displays the basic description of the cryptocurrency selected - Cosmos.
@@ -159,6 +162,8 @@ accesing()
 ```
 At the very beginning, the user is welcomed to the ledger and given two options, to login in if they have a pre existing account or to register if they do not. This code allows the user to do both. If registering, the user chooses their desired username and password, and they are also asked to confirm this password to see if they match. If all password requirements are satisfied, meaning the password is longer that 6 characters and neither the username nor the password have ever been inputed into the database "username.csv" before, the creditials of that user will be saved and stored into that said database. If the user is logging in, the program expects the user to input credentials that have been registered before and have been therefore found in the database. If they have, the user will proceed into the ledger but if they have not, the user will be asked to try again or to register if they haven't and they pressed loggin by mistake. 
 
+This code was challenging as it was the first chunk of code I created for this project. I was new to setting up databases and the multiple values to store (username and password) made the experience difficult. I also needed to ensure that although the values existed in the database in order to allow the user to enter the ledger, the inputs had to be part of the same "line." On the other hand, the various password set up criteria the user needed to fulfill in order for the password to be accepted were quite simple as they are codes I am familiar therefore comfortable doing. 
+
 ## Balance set up
 ```.py
 if new == 2:
@@ -171,6 +176,8 @@ if new == 2:
         print(f"{bold_blue} Thank you! You can now perfom transactions! {end_code}")
 ```
 A code to setup the balance for a new user has also been created. This will set the balance to the desired amount the user has decided the balance to be and the user will therefore be able to make transaction with such. This is mostly for when a user is new to the digital ledger and is currently setting up their data.  
+
+When creating this code something I struggled with was definetely linking up the database with the program and ensuring that the values entered by the user were going to remain exactly where they needed to be. If it had gone wrong, the user would have not been able to use the ledger as the balance is fundamental for the usage of such. 
 
 ## Deposit
 ```.py
@@ -188,3 +195,5 @@ A code to setup the balance for a new user has also been created. This will set 
             ledger()
 ```
 This is the code I made that allows the user to deposit money into their account. The deposit amount will be saved onto the databse named "data_transactions". The number that is inputted is checked to see if it is an integer, as strings cannot be subtracted nor added to an integer. 
+
+This program was relatively easy to create as by this point (option 4) I knew how to connect databases around and felt quite comfortable with the project in general.
