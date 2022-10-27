@@ -29,3 +29,4 @@ print (test1)
 <img width="1024" alt="Screen Shot 2022-10-10 at 7 48 15" src="https://user-images.githubusercontent.com/105724334/194783216-8049954a-66d6-47a3-bad2-fc196840ef89.png">
 
 #### Figure 2: Flowchart 
+![IMG_0434](https://user-images.githubusercontent.com/105724334/198323313-3630bb04-f11d-44a6-8bf9-8f3607bbd905.jpg)
