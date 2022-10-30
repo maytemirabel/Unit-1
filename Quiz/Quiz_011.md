@@ -20,11 +20,13 @@ def bestMonth():
             print(i, dayofweek[(i + day_start[month]) % 7])
     exit()
 
-# ------------------
 out = bestMonth()
 print(out)
 ```
 
 #### Figure 1: Proof of program
+<img width="831" alt="Screen Shot 2022-10-28 at 13 44 46" src="https://user-images.githubusercontent.com/105724334/198504595-fd2734fc-a4aa-46cc-8443-d6cb12a863f4.png">
+<img width="296" alt="Screen Shot 2022-10-28 at 13 45 14" src="https://user-images.githubusercontent.com/105724334/198504602-7c00d542-d9fd-4518-81d3-965613052bd4.png">
 
 #### Figure 2: Flowchart 
+![IMG_0435](https://user-images.githubusercontent.com/105724334/198869910-e2f304c7-5242-44c3-8469-37e122447ffc.jpg)
